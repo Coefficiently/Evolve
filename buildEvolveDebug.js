@@ -4,7 +4,7 @@ require("esbuild")
     entryPoints: ["./src/main.js"],
     bundle: true,
     minify: false,
-    sourcemap : true,
+    sourcemap: true,
     outfile: "evolve/main.js",
   })
   .catch(() => process.exit(1));

@@ -17,7 +17,9 @@ If there is a last-strings.json file, it will be used to keep track of changes i
 ```shell
 python checkStrings.py <locale>
 ```
+
 This script reads the strings.json and string.\<locale\>.json files and outputs every line that:
+
 - is out of json format
 - the value is marked with tag 'TRANS:' or 'CHANGE:'
 - the number of periods (.) in the strings.json differs from strings.\<locale\>.json. The translation does not need to have the same number of periods, but this helps find phrases that end with periods that were forgotten in the translation
@@ -25,7 +27,8 @@ This script reads the strings.json and string.\<locale\>.json files and outputs 
 - the number of tokens (like %0) in the strings.json differs from strings.\<locale\>.json
 - the numbers in the strings.json differ from strings.\<locale\>.json
 
-You can disable some of the checks if you open the script and change the values to ```True``` or ```False```:
+You can disable some of the checks if you open the script and change the values to `True` or `False`:
+
 ```python
 check_tags = True
 check_tokens = True

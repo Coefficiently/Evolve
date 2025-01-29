@@ -4,7 +4,7 @@ require("esbuild")
     entryPoints: ["./src/wiki/wiki.js"],
     bundle: true,
     minify: false,
-    sourcemap : true,
+    sourcemap: true,
     outfile: "wiki/wiki.js",
   })
   .catch(() => process.exit(1));
